@@ -1,0 +1,53 @@
+<?php
+include '../aset/header.php';
+?>
+<style>
+thead{
+  background-color: turquoise;
+  color: white;
+}
+tbody{
+  background-color: darkslategrey;
+  color: white;
+}
+</style>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-9">
+            <div class="card bg-dark">
+                <div class="card-header">
+                  <h2 class="card-title text-white"><i class="fas fa-edit"></i>Tambahkan Data Anggota</h2>
+                </div>
+                <div class="card-body">
+                  <form method="post" action="proses-tambah.php">
+                      <div class="form-group text-white">
+                          <label for="anggota">Nama Lengkap</label>
+                          <input type="text" class="form-control" name="nama" id="anggota" placeholder="Masukkan nama lengkap">
+                      </div>
+                      <div class="form-group text-white">
+                          <label for="kelas">Kelas</label>
+                          <input type="text" class="form-control" name="kelas" id="kelas" placeholder="Masukkan kelas">
+                      </div>
+                      <div class="form-group text-white">
+                          <label for="telp">Nomor Telepon</label>
+                          <input type="text" class="form-control" name="telp" id="telp" placeholder="Masukkan nomor telepon">
+                        </div>
+                      <div class="form-group text-white">
+                          <label for="username">Username</label>
+                          <input type="text" class="form-control" name="username" id="username" placeholder="Masukkan username">
+                      </div>
+                      <div class="form-group text-white">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" name="password" id="password" placeholder="Masukkan password">
+                      </div>
+
+                      <button type="submit" class="btn btn-primary" name="simpan">Simpan</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php
+include '../aset/footer.php';
+?>
